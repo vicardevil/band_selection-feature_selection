@@ -1,6 +1,6 @@
 clc
 clear;
-him = double(cell2mat(struct2cell(load('Indian_pines.mat'))));
+him = double(cell2mat(struct2cell(load('./data/Indian_pines.mat'))));
 %the data cube is three dimention m*n*l
 [m,n,l ]=size(him);
 him=reshape(him,m*n,l);
